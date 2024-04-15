@@ -1,0 +1,20 @@
+.admin-homepage-container {
+    background: url(../assets/background.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    text-transform: uppercase;
+
+    .div-top {
+        padding-top: 20px;
+        padding-left: 10%;
+        display: grid;
+        gap: 20px;
+
+        .admin-button {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

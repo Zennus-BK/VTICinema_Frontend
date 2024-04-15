@@ -1,66 +1,90 @@
 .row.mb-3 .col i {
-  margin-right: 0.25em; /* Khoảng cách bên phải cho icon */
+  margin-right: 0.25em;
+  /* Khoảng cách bên phải cho icon */
 }
 
 .button-item .btn {
-  margin-right: 5px; /* Khoảng cách giữa các nút */
-  width: 120px; /* Độ dài cố định cho mỗi nút */
+  margin-right: 5px;
+  /* Khoảng cách giữa các nút */
+  width: 120px;
+  /* Độ dài cố định cho mỗi nút */
 }
 
 .button-item .btn:last-child {
-  margin-right: 0; /* Loại bỏ margin của nút cuối cùng */
+  margin-right: 0;
+  /* Loại bỏ margin của nút cuối cùng */
 }
 
 .form-group {
   display: flex;
-  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-  margin-bottom: 1rem; /* Khoảng cách giữa các form group */
+  align-items: center;
+  /* Căn giữa các phần tử theo chiều dọc */
+  margin-bottom: 1rem;
+  /* Khoảng cách giữa các form group */
 }
 
 .form-group label {
-  flex: 0 0 30%; /* Độ rộng của label */
-  margin-right: 1rem; /* Khoảng cách giữa label và input */
-  text-align: right; /* Căn chỉnh văn bản của label sang phải */
+  flex: 0 0 30%;
+  /* Độ rộng của label */
+  margin-right: 1rem;
+  /* Khoảng cách giữa label và input */
+  text-align: right;
+  /* Căn chỉnh văn bản của label sang phải */
 }
 
 .form-group input,
 .form-group textarea {
-  flex: 1; /* Ô nhập liệu chiếm phần còn lại của không gian */
+  flex: 1;
+  /* Ô nhập liệu chiếm phần còn lại của không gian */
 }
 
 .btn-group .btn-update {
-  background-color: #007bff; /* Màu nền cho nút cập nhật */
-  color: #fff; /* Màu chữ cho nút cập nhật */
+  background-color: #007bff;
+  /* Màu nền cho nút cập nhật */
+  color: #fff;
+  /* Màu chữ cho nút cập nhật */
 }
 
 .btn-group .btn-delete {
-  background-color: #dc3545; /* Màu nền cho nút xóa */
-  color: #fff; /* Màu chữ cho nút xóa */
+  background-color: #dc3545;
+  /* Màu nền cho nút xóa */
+  color: #fff;
+  /* Màu chữ cho nút xóa */
 }
 
 .btn-group .btn {
-  margin-right: 10px; /* Khoảng cách giữa các nút */
+  margin-right: 10px;
+  /* Khoảng cách giữa các nút */
 }
+
 p {
-  margin-bottom: 0.5rem; /* Khoảng cách giữa các đoạn văn */
+  margin-bottom: 0.5rem;
+  /* Khoảng cách giữa các đoạn văn */
 }
 
 p strong {
-  display: block; /* Hiển thị mỗi strong element trên một dòng mới */
+  display: block;
+  /* Hiển thị mỗi strong element trên một dòng mới */
 }
+
 .featured-movie .col-md-2 img {
   max-width: 100%;
   height: auto;
   max-height: 100%;
 }
-.full-width {
-  width: 160px; /* Thay đổi chiều rộng theo nhu cầu */
 
-  object-fit: cover; /* Đảm bảo ảnh lấp đầy kích thước được đặt */
+.full-width {
+  width: 160px;
+  /* Thay đổi chiều rộng theo nhu cầu */
+
+  object-fit: cover;
+  /* Đảm bảo ảnh lấp đầy kích thước được đặt */
 }
+
 .film-content {
   margin-top: 10px;
 }
+
 .name-text {
   margin-bottom: 14px;
 }
@@ -75,7 +99,8 @@ p strong {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  position: relative; /* Để icon like và dislike có thể được đặt tương đối */
+  position: relative;
+  /* Để icon like và dislike có thể được đặt tương đối */
 }
 
 .user-icon {
@@ -138,18 +163,27 @@ p strong {
 
 .horizontal-list li {
   display: inline-block;
-  margin-right: 10px; /* Khoảng cách giữa các mục */
+  margin-right: 10px;
+  /* Khoảng cách giữa các mục */
 }
 
 .horizontal-list li:last-child {
-  margin-right: 0; /* Loại bỏ khoảng cách ở phần tử cuối cùng */
+  margin-right: 0;
+  /* Loại bỏ khoảng cách ở phần tử cuối cùng */
 }
 
 .horizontal-list a {
-  color: black; /* Đặt màu chữ thành đen */
-  text-decoration: none; /* Loại bỏ gạch chân */
+  color: black;
+  /* Đặt màu chữ thành đen */
+  text-decoration: none;
+  /* Loại bỏ gạch chân */
 }
 
 .horizontal-list a:hover {
-  color: #007bff; /* Đổi màu chữ khi di chuột qua */
+  color: #007bff;
+  /* Đổi màu chữ khi di chuột qua */
+}
+
+.container {
+  display: flex;
 }

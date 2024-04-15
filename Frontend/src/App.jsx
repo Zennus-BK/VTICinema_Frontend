@@ -1,10 +1,11 @@
-import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom'
+import router from './router/router'
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
 import HeaderMenu from "./component/headerMenu";
-import RoutesWithHeader from "./router/router";
 import Footer from "./component/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import RoutesWithHeader from './router/router';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       </div>
       <Footer />
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

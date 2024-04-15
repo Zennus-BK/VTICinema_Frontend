@@ -1,39 +1,59 @@
 .film-content {
-  position: relative; /* Đảm bảo vị trí tương đối */
+  position: relative;
+  /* Đảm bảo vị trí tương đối */
 }
+
 .create-button {
-  position: absolute; /* Đảm bảo vị trí tuyệt đối so với phần tử cha film-content */
-  bottom: 20px; /* Khoảng cách từ dưới cùng */
-  right: 20px; /* Khoảng cách từ bên phải */
+  position: relative;
+  /* Đảm bảo vị trí tuyệt đối so với phần tử cha film-content */
+  bottom: 20px;
+  /* Khoảng cách từ dưới cùng */
+  right: 20px;
+  /* Khoảng cách từ bên phải */
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #007bff; /* Màu nền của nút */
-  color: #fff; /* Màu chữ của nút */
+  background-color: #007bff;
+  /* Màu nền của nút */
+  color: #fff;
+  /* Màu chữ của nút */
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Đổ bóng cho nút */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* Đổ bóng cho nút */
 }
+
 .custom-modal .modal-content {
-  background-color: #fffacd; /* Màu nền nhẹ nhàng */
+  background-color: #fffacd;
+  /* Màu nền nhẹ nhàng */
 }
+
 .create-button:hover {
-  background-color: #0056b3; /* Màu nền của nút khi di chuột qua */
+  background-color: #0056b3;
+  /* Màu nền của nút khi di chuột qua */
 }
+
 .film-content a {
-  color: black; /* Màu chữ cho các liên kết */
-  margin: 0 10px; /* Khoảng cách giữa các liên kết */
-  text-decoration: none; /* Loại bỏ gạch chân từ các liên kết */
+  color: black;
+  /* Màu chữ cho các liên kết */
+  margin: 0 10px;
+  /* Khoảng cách giữa các liên kết */
+  text-decoration: none;
+  /* Loại bỏ gạch chân từ các liên kết */
 }
 
 .film-content a:not(:last-child)::after {
-  content: "|"; /* Thêm dấu "|" sau mỗi liên kết, trừ cái cuối cùng */
-  color: rgba(0, 0, 0, 0.5); /* Màu của dấu "|" */
-  margin-left: 5px; /* Khoảng cách giữa dấu "|" và chữ */
+  content: "|";
+  /* Thêm dấu "|" sau mỗi liên kết, trừ cái cuối cùng */
+  color: rgba(0, 0, 0, 0.5);
+  /* Màu của dấu "|" */
+  margin-left: 5px;
+  /* Khoảng cách giữa dấu "|" và chữ */
 }
+
 /* Style for dropdown container */
 .dropdown {
   position: relative;
@@ -84,7 +104,7 @@
 }
 
 /* Show dropdown menu when toggle button is clicked */
-.dropdown-toggle:focus + .dropdown-menu,
+.dropdown-toggle:focus+.dropdown-menu,
 .dropdown-menu:focus {
   display: block;
 }
@@ -124,25 +144,34 @@
 .dropdown-input {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Căn giữa theo chiều ngang */
+  justify-content: space-between;
+  /* Căn giữa theo chiều ngang */
   margin-top: 20px;
 }
+
 .film-list {
   margin-top: 30px;
 }
+
 .card {
-  width: 100%; /* Đảm bảo các ô chứa hình ảnh bằng nhau */
+  width: 100%;
+  /* Đảm bảo các ô chứa hình ảnh bằng nhau */
 }
 
 .card-img-top {
-  width: 100%; /* Hình ảnh sẽ lấp đầy ô chứa */
-  height: auto; /* Đảm bảo tỉ lệ hình ảnh không bị vỡ */
-  object-fit: cover; /* Giữ tỉ lệ gốc của hình ảnh và lấp đầy ô chứa */
+  width: 100%;
+  /* Hình ảnh sẽ lấp đầy ô chứa */
+  height: auto;
+  /* Đảm bảo tỉ lệ hình ảnh không bị vỡ */
+  object-fit: cover;
+  /* Giữ tỉ lệ gốc của hình ảnh và lấp đầy ô chứa */
 }
 
 .card-title {
-  font-size: 14px; /* Kích thước chữ nhỏ lại */
+  font-size: 14px;
+  /* Kích thước chữ nhỏ lại */
 }
+
 .create-button {
   position: fixed;
   bottom: 20px;
@@ -150,41 +179,51 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #007bff; /* Màu nền của nút */
-  color: #fff; /* Màu chữ của nút */
+  background-color: #007bff;
+  /* Màu nền của nút */
+  color: #fff;
+  /* Màu chữ của nút */
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Đổ bóng cho nút */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* Đổ bóng cho nút */
 }
 
 .create-button:hover {
-  background-color: #0056b3; /* Màu nền của nút khi di chuột qua */
+  background-color: #0056b3;
+  /* Màu nền của nút khi di chuột qua */
 }
 
 /* Style cho các label và input */
 .form-group {
-  margin-bottom: 1rem; /* Khoảng cách giữa các form-group */
+  margin-bottom: 1rem;
+  /* Khoảng cách giữa các form-group */
 }
 
 label {
-  width: 120px; /* Độ rộng của label */
-  margin-right: 10px; /* Khoảng cách giữa label và input */
+  width: 120px;
+  /* Độ rộng của label */
+  margin-right: 10px;
+  /* Khoảng cách giữa label và input */
 }
 
 input[type="text"],
 textarea,
 input[type="date"],
 input[type="file"] {
-  flex-grow: 1; /* Input sẽ mở rộng để lấp đầy không gian còn trống */
+  flex-grow: 1;
+  /* Input sẽ mở rộng để lấp đầy không gian còn trống */
 }
 
 /* Điều chỉnh độ rộng của input file */
 input[type="file"] {
-  width: auto; /* Input file tự điều chỉnh độ rộng */
+  width: auto;
+  /* Input file tự điều chỉnh độ rộng */
 }
+
 /* Đảm bảo văn bản ở giữa modal */
 .modal-body.text-center {
   display: flex;
@@ -196,6 +235,7 @@ input[type="file"] {
 .modal-body .modal-body {
   display: none;
 }
+
 .success {
   color: green;
 }

@@ -1,0 +1,20 @@
+.bookticket-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    img {
+        width: 50vw;
+    }
+
+    .movie-detail {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seat-row {
+        display: flex;
+        gap: 5px;
+
+    }
+}

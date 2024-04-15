@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom"; // Import useParams từ react-router-dom
+import { useNavigate, useParams } from "react-router-dom"; // Import useParams từ react-router-dom
 import {
   faThumbsUp,
   faCalendarAlt,
@@ -17,6 +17,7 @@ const FilmDetail = () => {
   const [film, setFilm] = useState(null);
   const [reviews, setReviews] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [updatedFilm, setUpdatedFilm] = useState({
     name: "",
@@ -99,7 +100,6 @@ const FilmDetail = () => {
   if (!film) {
     return <div>Loading...</div>;
   }
-
   return (
     <div className="main-content">
       <div className="bg-dark border-bottom text-white featured-movie">
@@ -125,7 +125,7 @@ const FilmDetail = () => {
               <button type="button" className="btn  btn-outline-light">
                 Trailer
               </button>
-              <button type="button" className="btn btn-danger btn-ticket">
+              <button type="button" className="btn btn-danger btn-ticket" onClick={() => { navigate("/bookticket/" + id) }}>
                 Mua vé
               </button>
             </div>
@@ -182,13 +182,13 @@ const FilmDetail = () => {
               role="group"
               aria-label="Film management"
             >
-              <button
+              {localStorage.getItem("role") == "ADMIN" && <button
                 type="button"
                 className="btn btn-secondary btn-update"
                 onClick={() => handleOpenModal(film)}
               >
                 Cập nhật phim
-              </button>
+              </button>}
 
               <Modal
                 show={showModal}
@@ -342,13 +342,13 @@ const FilmDetail = () => {
                   </Button>
                 </Modal.Footer>
               </Modal>
-              <button
+              {localStorage.getItem("role") == "ADMIN" && <button
                 type="button"
                 className="btn btn-secondary btn-delete"
                 onClick={() => setShowConfirmModal(true)}
               >
                 Xóa phim
-              </button>
+              </button>}
               <Modal
                 show={showConfirmModal}
                 onHide={handleCloseConfirmModal}
