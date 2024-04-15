@@ -1,0 +1,14 @@
+.promotion-title {
+  margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và danh sách hình ảnh */
+}
+
+.promotion-image {
+  margin: 0 10px; /* Khoảng cách giữa các hình ảnh */
+}
+.promotion-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+  gap: 20px; /* Khoảng cách giữa các ảnh */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}

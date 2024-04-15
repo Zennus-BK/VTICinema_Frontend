@@ -1,0 +1,102 @@
+.bg-dark.tix-bg {
+  position: relative;
+  background-image: url("https://fandomwire.com/wp-content/uploads/2018/08/Movies-background.png");
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Thêm padding nếu cần */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-position: center; /* Hiển thị hình ảnh tại trung tâm */
+}
+.bg-dark.tix-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu overlay có độ mờ là 0.5 */
+  z-index: 1;
+}
+.text-center {
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+.text-white-1,
+.text-white-2 {
+  font-size: 22px;
+  line-height: 1.5rem;
+  color: #fff;
+}
+.text-white-2 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.content {
+  overflow-x: hidden;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.list {
+  width: 400px; /* Đặt chiều rộng cố định cho danh sách */
+}
+
+.showtime-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Canh giữa các cột */
+}
+
+.movie {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.movie h2 {
+  margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và hình ảnh */
+}
+
+.movie-image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Loại bỏ khoảng trắng mặc định của danh sách */
+}
+
+.schedule li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.movie-item {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử bên trong */
+
+  border-radius: 5px;
+  flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  align-items: center; /* Canh các phần tử theo trục dọc */
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
+}
+
+.schedule li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+}

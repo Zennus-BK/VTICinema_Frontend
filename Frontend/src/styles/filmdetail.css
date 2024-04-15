@@ -1,0 +1,155 @@
+.row.mb-3 .col i {
+  margin-right: 0.25em; /* Khoảng cách bên phải cho icon */
+}
+
+.button-item .btn {
+  margin-right: 5px; /* Khoảng cách giữa các nút */
+  width: 120px; /* Độ dài cố định cho mỗi nút */
+}
+
+.button-item .btn:last-child {
+  margin-right: 0; /* Loại bỏ margin của nút cuối cùng */
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  margin-bottom: 1rem; /* Khoảng cách giữa các form group */
+}
+
+.form-group label {
+  flex: 0 0 30%; /* Độ rộng của label */
+  margin-right: 1rem; /* Khoảng cách giữa label và input */
+  text-align: right; /* Căn chỉnh văn bản của label sang phải */
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1; /* Ô nhập liệu chiếm phần còn lại của không gian */
+}
+
+.btn-group .btn-update {
+  background-color: #007bff; /* Màu nền cho nút cập nhật */
+  color: #fff; /* Màu chữ cho nút cập nhật */
+}
+
+.btn-group .btn-delete {
+  background-color: #dc3545; /* Màu nền cho nút xóa */
+  color: #fff; /* Màu chữ cho nút xóa */
+}
+
+.btn-group .btn {
+  margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+p {
+  margin-bottom: 0.5rem; /* Khoảng cách giữa các đoạn văn */
+}
+
+p strong {
+  display: block; /* Hiển thị mỗi strong element trên một dòng mới */
+}
+.featured-movie .col-md-2 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.full-width {
+  width: 160px; /* Thay đổi chiều rộng theo nhu cầu */
+
+  object-fit: cover; /* Đảm bảo ảnh lấp đầy kích thước được đặt */
+}
+.film-content {
+  margin-top: 10px;
+}
+.name-text {
+  margin-bottom: 14px;
+}
+
+/* css đánh giá */
+.review-list {
+  margin-top: 20px;
+}
+
+.review-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative; /* Để icon like và dislike có thể được đặt tương đối */
+}
+
+.user-icon {
+  margin-right: 5px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.review-content {
+  margin-top: 5px;
+}
+
+.like-dislike-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.like-dislike-icons span {
+  margin-right: 10px;
+}
+
+.like-icon,
+.dislike-icon {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.like-icon:hover,
+.dislike-icon:hover {
+  color: #0056b3;
+}
+
+.show-more-button {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.show-more-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-more-button button:hover {
+  background-color: #0056b3;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-right: 10px; /* Khoảng cách giữa các mục */
+}
+
+.horizontal-list li:last-child {
+  margin-right: 0; /* Loại bỏ khoảng cách ở phần tử cuối cùng */
+}
+
+.horizontal-list a {
+  color: black; /* Đặt màu chữ thành đen */
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.horizontal-list a:hover {
+  color: #007bff; /* Đổi màu chữ khi di chuột qua */
+}

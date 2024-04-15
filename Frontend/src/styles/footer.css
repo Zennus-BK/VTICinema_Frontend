@@ -1,0 +1,84 @@
+.footer {
+  background-color: #fa8072;
+  margin-top: 50px;
+  padding: 15px 0;
+  color: #fff; /* Thêm màu chữ cho footer */
+  width: 100%;
+  overflow-x: hidden; /* Tắt thanh scroll ngang */
+  position: relative; /* Đảm bảo vị trí tương đối */
+  margin-top: 50px; /* Khoảng cách từ phần footer đến phần film-content */
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 6fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+footer ul {
+  margin-bottom: 30px;
+  list-style: none; /* Loại bỏ dấu chấm của danh sách */
+  padding: 0; /* Loại bỏ padding mặc định của danh sách */
+}
+
+footer ul li {
+  margin-right: 30px;
+  display: inline-block; /* Hiển thị các mục trong danh sách liên tục trên cùng 1 dòng */
+  font-weight: 700;
+}
+
+footer i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* Để icon nằm chính giữa */
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block; /* Hiển thị icon liên tục trên cùng 1 dòng */
+}
+
+footer .box {
+  line-height: 1.5; /* Tăng line-height để các dòng chữ không bị chồng chéo */
+}
+
+footer .box-item {
+  line-height: 6.5; /* Tăng line-height để các dòng chữ không bị chồng chéo */
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+.img {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.img img {
+  width: 140px; /* Đặt kích thước mong muốn cho các hình ảnh */
+  height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+  margin-right: 10px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.img span {
+  display: inline-block; /* Chuyển đổi sang hiển thị inline-block để không bị xuống dòng */
+  vertical-align: middle; /* Canh chữ theo chiều dọc giữa các hình ảnh */
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Đặt kích thước cho logo */
+  height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+  margin-right: 20px; /* Khoảng cách giữa logo và đoạn văn bản */
+  border-radius: 50%;
+  border: 2px solid #dcee0e;
+}
+
+.footer-logo p {
+  margin: 0; /* Loại bỏ margin mặc định của đoạn văn bản */
+}

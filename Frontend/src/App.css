@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: "Noto Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS để thay đổi kích thước của biểu tượng mũi tên xuống */
+.ant-space .ant-space-item:last-child .anticon {
+  font-size: 12px; /* Kích thước mới của biểu tượng mũi tên xuống */
+  display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử bên trong Space */
+  align-items: center; /* Căn phần tử theo chiều dọc vào trung tâm */
+  margin-left: auto; /* Đặt margin-left tự động để đẩy biểu tượng mũi tên xuống vào giữa */
+}
+
+/* CSS để đảm bảo văn bản không bị ảnh hưởng bởi kích thước của biểu tượng */
+.ant-space .ant-space-item:first-child {
+  white-space: nowrap; /* Ngăn văn bản bị xuống dòng */
+}
